@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Travel Company</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- nev,section hero(P'tae) -->
@@ -14,6 +19,58 @@
     <!-- (เอิงเอย)-->
 
     <!-- (tanji)-->
+    <section class="popular-section-container w-full flex flex-col items-center pt-[69px] pl-[250px] pr-[250px]">
+        <div class="popular-section-content w-full flex flex-col items-center gap-[220px]">
+            <h1 class="text-[48px]/[68px] font-bold text-center font-['Poppins']">World Top Visitting<br />Place in 2021</h1>
+            <div class="popular-country-map w-full">
+                <img src="assets/popular-country-map.png" alt="top visiting place">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section-container gap-[100px] w-full flex flex-col pl-[250px] pr-[250px] pt-[220px] pb-[100px] bg-[url('assets/footer-bg.png')] bg-cover bg-center">
+        <div class="subscribe-section gap-[50px] flex flex-col">
+            <h1 class="text-[48px]/[68px] font-bold font-['Poppins']">Subscribe<br />for every Tour<br />News & Tips</h1>
+            <form action="" class="flex flex-row justify-between gap-[10px] bg-white rounded-[20px] w-[574px] h-[100px] p-[15px] shadow-lg">
+                <input class="rounded-[20px] p-2 w-full text-[16px]/[24px] font-medium font-['DM Sans']" type="email" placeholder="Enter your email">
+                <button class="rounded-[20px] p-2 font-['DM Sans'] bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] text-white w-[177px] text-[16px]/[24px] font-bold" type="submit">Subscribe →</button>
+            </form>
+        </div>
+        <div class="footer-section-content flex flex-col w-[50%]">
+            <div class="footer-section-content-top">
+                <img src="assets/footer-icon.png" alt="footer-icon">
+            </div>
+            <div class="footer-section-content-bottom flex flex-row justify-between items-center">
+                <div class="footer-section-content-bottom-left">
+                    <h1 class="text-[18px] font-medium font-['DM Sans']">Copyright©Tripp.All right reserved</h1>
+                </div>
+                <div class="footer-section-content-bottom-right">
+                    <ul class="flex flex-row gap-4">
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/google-icon.png" alt="Google">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/twitter-icon.png" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/instagram-icon.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/linkedin-icon.png" alt="LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
