@@ -319,91 +319,108 @@
     <section class="popular-destinations bg-amber-50 py-16">
 
         <!-- main div -->
-        <div class="destinations-container max-w-7xl mx-auto "> 
+        <div class="destinations-container max-w-7xl mx-auto px-4"> 
 
             <!-- div นี้จะถูกแบ่งเป็น 2 คอลัมน์ -->
             <div class="flex flex-col lg:flex-row gap-8 items-center">
 
+                <!-- บน Mobile: แสดงข้อความก่อน, บน Desktop: แสดงรูปก่อน -->
+                <!-- คอลัมน์ที่ 2 (ขวา) - ย้ายขึ้นมาบน mobile -->
+                <div class="flex-1 max-w-xl lg:hidden">
+                    <article>
+                        <header class="text-center lg:text-left">
+                            <h2 class="text-3xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-4 lg:mb-6">
+                                Most Popular<br>
+                                Destination of Us!
+                            </h2>
+
+                            <p class="text-gray-600 text-sm lg:text-base font-light leading-relaxed mb-6 lg:mb-8 px-4 lg:px-0">
+                                Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer
+                            </p>
+                        </header>
+                    </article>
+                </div>
+
                 <!-- คอลัมน์ที่ 1 (ซ้าย) -->
-                <div class="flex-1 relative">
+                <div class="flex-1 relative w-full lg:w-auto">
                     <!-- Carousel Container -->
-                    <div class="flex gap-6 items-end justify-start -ml-10">
-                        <!-- Card 1 - Partial view -->
-                        <div class="w-56 h-80 bg-gray-400 rounded-xl overflow-hidden relative z-10 ">
-                            
+                    <div class="flex gap-6 items-end justify-center lg:justify-start lg:-ml-10">
+                        <!-- บน Mobile: แสดงแค่การ์ดเดียว -->
+                        <!-- Card 1 - Hidden on mobile -->
+                        <div class="hidden lg:block w-56 h-80 bg-gray-400 rounded-xl overflow-hidden relative z-10">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
                                 <div class="flex items-center justify-between">
                                     <div class="text-white font-semibold text-sm">
                                         Wall of China <br> <span class="font-light">China</span>
                                     </div>
-                                     
                                     <div class="flex items-center gap-1 text-white text-sm mt-1">
                                         <span>4.8</span>
                                         <span>★</span>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
 
-
-                        <!-- Card 2 - Main/Center -->
-                        <div class="w-64 h-96 bg-gray-400 rounded-xl overflow-hidden relative z-20 -mt-4 mb-[30px]">
+                        <!-- Card 2 - Main/Center (แสดงบน Mobile) -->
+                        <div class="w-72 h-[400px] lg:w-64 lg:h-96 bg-gray-400 rounded-xl overflow-hidden relative z-20 lg:-mt-4 lg:mb-[30px]">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-
                                 <div class="flex items-center justify-between">
-                                    <div class="text-white font-semibold text-sm">
-                                        Lake Powell <br> <span class="font-light">U.S.A</span>
+                                    <div class="text-white font-semibold text-base lg:text-sm">
+                                        <span class="lg:hidden">Great Wall of China</span>
+                                        <span class="hidden lg:block">Lake Powell</span>
+                                        <br> 
+                                        <span class="font-light">
+                                            <span class="lg:hidden">Beijing, China</span>
+                                            <span class="hidden lg:block">U.S.A</span>
+                                        </span>
                                     </div>
-                                     
-                                    <div class="flex items-center gap-1 text-white text-sm mt-1">
+                                    <div class="flex items-center gap-1 text-white text-base lg:text-sm mt-1">
                                         <span>4.8</span>
                                         <span>★</span>
                                     </div>
-
                                 </div>
-                                
                             </div>
                         </div>
-                        <!-- Card 3 - Full view -->
-                        <div class="w-56 h-80 bg-gray-400 rounded-xl overflow-hidden relative z-10 ">
-                            <div class="absolute bottom-0 left-0 right-0 p-4">
 
+                        <!-- Card 3 - Hidden on mobile -->
+                        <div class="hidden lg:block w-56 h-80 bg-gray-400 rounded-xl overflow-hidden relative z-10">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
                                 <div class="flex items-center justify-between">
                                     <div class="text-white font-semibold text-sm">
                                         Deep of Creek Lake <br> <span class="font-light">Maryland</span>
                                     </div>
-                                     
                                     <div class="flex items-center gap-1 text-white text-sm mt-1">
                                         <span>4.8</span>
                                         <span>★</span>
                                     </div>
-
                                 </div>
-                                
                             </div>
                         </div>
+                    </div>
 
+                    <!-- Dot Indicators (แสดงบน Mobile) -->
+                    <div class="flex justify-center gap-2 mt-6 lg:hidden">
+                        <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+                        <span class="w-8 h-2 bg-orange-500 rounded-full"></span>
+                        <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
                     </div>
 
                     <!-- Navigation Arrows -->
-                    <div class="flex justify-center gap-20 mt-8">
-
+                    <div class="hidden lg:flex justify-center gap-20 mt-8">
                         <!-- Left button -->
-                        <button class="w-10 h-10  rounded-full  flex items-center justify-center hover:shadow-lg transition-shadow">
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition-shadow">
                             <span class="text-orange-500 text-3xl font-extralight">←</span>
                         </button>
                         
                         <!-- Right button -->
-                        <button class="w-10 h-10  rounded-full  flex items-center justify-center hover:shadow-lg transition-shadow">
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition-shadow">
                             <span class="text-orange-500 text-4xl font-semibold">→</span>
                         </button>
                     </div>
                 </div>
                 
-                <!-- คอลัมน์ที่ 2 (ขวา) -->
-                <div class="flex-1 max-w-xl pl-8">
+                <!-- Desktop: แสดงข้อความด้านขวา -->
+                <div class="hidden lg:flex flex-1 max-w-xl pl-8">
                     <article>
                         <header>
                             <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
@@ -423,82 +440,79 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
-
                         </header>
                     </article>
-
                 </div>
 
+                <!-- Mobile: แสดงปุ่ม View All ด้านล่าง -->
+                <div class="lg:hidden w-full flex justify-center mt-8">
+                    <a href="#" class="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition-colors duration-300">
+                        View All
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
             </div>
-
         </div>
-
     </section>
 
     <section class="Feeback-Customer bg-white py-16">
         <!-- main div -->
-        <div class="Feedback-container max-w-7xl mx-auto "> 
+        <div class="Feedback-container max-w-7xl mx-auto px-4"> 
             <!-- แบ่ง 2 colum -->
             <div class="flex flex-col lg:flex-row gap-8 items-center">
 
-                <!-- คอลัมน์ที่ 1 (ซ้าย) -->
-                <div class="flex-1 relative flex justify-center items-center">
+                <!-- บน Mobile: แสดงเป็น single column -->
+                <!-- รูปภาพ (Mobile only) -->
+                <div class="lg:hidden w-48 h-48 rounded-full overflow-hidden mb-8">
+                    <img src="./img/feeback_1.png" alt="Feedback 1" class="w-full h-full object-cover">
+                </div>
+
+                <!-- คอลัมน์ที่ 1 (ซ้าย) - Desktop only -->
+                <div class="hidden lg:flex flex-1 relative justify-center items-center">
                     <img src="./img/feeback_1.png" alt="Feedback 1" class="w-[450px] h-auto object-cover rounded-xl">
                 </div>
 
-                <div class="flex-1 max-w-xl pl-8 flex justify-center items-center">
-                    <article>
+                <div class="flex-1 max-w-xl lg:pl-8 flex justify-center items-center">
+                    <article class="text-center lg:text-left">
                         <header>
-                            <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                            <h2 class="text-3xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
                                 Feedback from<br>
                                 Our Customers
                             </h2>
 
-                        
-                            <p class="text-gray-600 text-base font-light">
-                                “ I’ve  Went ot America from Tripp Play  about 1 
-                            </p>
+                            <div class="px-4 lg:px-0">
+                                <p class="text-gray-600 text-sm lg:text-base font-light mb-2">
+                                    "I've Went ot America from Tripp Play about 1 
+                                    years ago. Tripp make the prototyping 
+                                    process so easy and faster. I feel this is the 
+                                    best apps for Prototyping use"
+                                </p>
 
-                            <p class="text-gray-600 text-base font-light">
-                                years ago. Tripp make the prototyping 
-                            </p>
+                                <p class="text-gray-500 text-sm lg:text-base font-light mt-6 mb-8">
+                                    — Ferdous - CEO of Coco
+                                </p>
+                            </div>
 
-                            <p class="text-gray-600 text-base font-light">
-                                process so easy and faster. I feel this is the 
-                            </p>
-
-                            <p class="text-gray-600 text-base font-light mb-8">
-                                best apps for Prototyping use ”
-                            </p>
-                       
-
-                            <p class="text-gray-600 text-base font-extralight leading-relaxed mb-6">
-                                - Ferdous - CEO of Coco
-                            </p>
-
-                            <div class="flex gap-5 mt-8">
-
+                            <!-- Navigation buttons -->
+                            <div class="flex gap-3 justify-center lg:justify-start">
                                 <!-- Left button -->
-                                <button class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:shadow-lg transition-shadow">
-                                    <span class="text-white text-xl font-extralight">←</span>
+                                <button class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
+                                    <span class="text-white text-xl">←</span>
                                 </button>
                                 
                                 <!-- Right button -->
-                                <button class="w-10 h-10 bg-orange-500 rounded-full  flex items-center justify-center hover:shadow-lg transition-shadow">
-                                    <span class="text-white text-xl font-extralight">→</span>
+                                <button class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
+                                    <span class="text-white text-xl">→</span>
                                 </button>
                             </div>
-
                         </header>
                     </article>
-
                 </div>
 
             </div>
-
          </div>
-
-
     </section>
 
     <!-- (tanji)-->
