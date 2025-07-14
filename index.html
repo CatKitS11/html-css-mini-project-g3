@@ -1,19 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Baloo Bhai 2', sans-serif;
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Paytone One', sans-serif;
+        font-family: 'Poppins', sans-serif; -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- nev,section hero(P'tae) -->
+    <div
+      class="bg-cover bg-center"
+      style="background-image: url('./assets/images/bg-cover.jpg')"
+    >
+      <div class="bg-white/85">
+        <nav class="flex mt-6 mb-6 justify-around items-center bg-white/50">
+          <div
+            class="font-bold text-4xl"
+            style="font-family: 'Baloo Bhai 2', sans-serif"
+          >
+            Tripp<span class="text-orange-500">.</span>
+          </div>
+          <ul
+            class="flex font-semibold gap-10"
+            style="font-family: 'DM Sans', sans-serif"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tour Package</a></li>
+          </ul>
+          <button
+            class="bg-orange-500 text-white font-semibold rounded-lg px-8 py-3 flex items-center gap-2 hover:bg-orange-600 transition"
+          >
+            Contact Us
+          </button>
+        </nav>
+        <header
+          class="relative min-h-[600px] flex flex-col justify-center items-center"
+        >
+          <div
+            class="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between w-full px-4 pt-16 pb-8"
+          >
+            <!-- Left: Text -->
+            <div class="flex-1 z-1">
+              <h1
+                class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
+                style="font-family: 'Paytone One', sans-serif"
+              >
+                Fuel Mind<br />
+                by Travel
+              </h1>
+              <p
+                class="text-lg md:text-xl text-blue-900/70 mb-8 max-w-lg"
+                style="font-family: 'DM Sans', sans-serif"
+              >
+                Enthusiastically extend extensive customer service<br />
+                before best breed convergence completely.
+              </p>
+            </div>
+            <!-- Right: Orange Circle + Card -->
+            <div
+              class="relative flex-1 flex justify-center items-center mt-10 md:mt-0"
+            >
+              <!-- Orange Circle -->
+              <div
+                class="w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-br from-orange-400 to-orange-500 flex items-center justify-center relative overflow-hidden"
+              >
+                <!-- Wavy lines (SVG) -->
+                <!-- <svg
+              class="absolute inset-0 w-full h-full"
+              viewBox="0 0 420 420"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 60 Q105 80 210 60 Q315 40 420 60"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 120 Q105 140 210 120 Q315 100 420 120"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 180 Q105 200 210 180 Q315 160 420 180"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 240 Q105 260 210 240 Q315 220 420 240"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 300 Q105 320 210 300 Q315 280 420 300"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+            </svg> -->
+              </div>
+              <!-- Card on top of circle -->
+              <div
+                class="absolute top-1/2 left-1/10 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl shadow-lg w-40 h-28 flex flex-col items-center justify-center"
+              >
+                <div class="w-20 h-10 bg-gray-200 rounded mb-2"></div>
+                <span
+                  class="text-xs text-gray-700"
+                  style="font-family: 'DM Sans', sans-serif"
+                  >Mountain Scot</span
+                >
+                <div class="flex gap-2 mt-2">
+                  <span class="w-4 h-4 bg-gray-300 rounded-full"></span>
+                  <span class="w-4 h-4 bg-gray-300 rounded-full"></span>
+                  <span class="w-4 h-4 bg-gray-300 rounded-full"></span>
+                  <span class="w-4 h-4 bg-gray-400 rounded-full"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Search/Filter Bar -->
+          <div
+            class="absolute left-5/8 bottom-0 -translate-x-1/2 translate-y-1/2 w-[95%] md:w-[900px] bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between px-6 py-4 gap-4"
+          >
+            <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+              <div>
+                <label class="text-xs text-gray-400">Location</label>
+                <div class="font-semibold">Cox's Bazar</div>
+              </div>
+              <div>
+                <label class="text-xs text-gray-400">Date</label>
+                <div class="font-semibold">Mon, 14 Mar – Thu, 17 Mar</div>
+              </div>
+              <div>
+                <label class="text-xs text-gray-400">Avg. Price</label>
+                <div class="font-semibold">$300 - $600</div>
+              </div>
+            </div>
+            <button
+              class="bg-orange-500 text-white font-semibold rounded-lg px-8 py-3 flex items-center gap-2 hover:bg-orange-600 transition"
+            >
+              Explore
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+      </div>
+    </div>
 
     <!-- (bambam)-->
+<!-- SECTION: Services -->
+<section class="bg-white py-12">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <!-- Header -->
+    <div class="flex justify-between items-center flex-wrap gap-y-4 mb-8 sm:mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+        Start Your Vacation <br />
+        with Lost of Services!
+      </h2>
+      <a href="#" class="text-sm text-orange-500 font-medium hover:underline flex items-center space-x-1">
+        <span>View All Services</span>
+        <span>→</span>
+      </a>
+    </div>
+
+    <!-- Services -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Card 1 (Always show) -->
+      <div class="bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-red-100 p-3 rounded-xl mb-4">
+          <img src="https://img.icons8.com/ios-filled/50/family.png" alt="Family Icon" class="w-8 h-8"/>
+        </div>
+        <h2 class="text-lg font-semibold mb-1 text-black">Family Vacations</h2>
+        <p class="text-sm text-gray-500">155 Properties</p>
+      </div>
+
+      <!-- Card 2 (Hidden on mobile) -->
+      <div class="hidden md:flex bg-white rounded-xl p-6 flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-red-100 p-3 rounded-xl mb-4">
+          <img src="https://img.icons8.com/?size=160&id=QyOEbIk4maWo&format=png" alt="Scuba Icon" class="w-8 h-8"/>
+        </div>
+        <h2 class="text-lg font-semibold mb-1 text-black">Scuba Diving</h2>
+        <p class="text-sm text-gray-500">143 Properties</p>
+      </div>
+
+      <!-- Card 3 (Hidden on mobile) -->
+      <div class="hidden md:flex bg-white rounded-xl p-6 flex-col items-center text-center shadow-md md:scale-[1.03] md:-mt-6 transition-transform">
+        <div class="bg-red-100 p-3 rounded-xl mb-4">
+          <img src="https://img.icons8.com/ios-filled/50/deer.png" alt="Hunting Icon" class="w-8 h-8"/>
+        </div>
+        <h2 class="text-lg font-semibold mb-1 text-black">Hunting Trip</h2>
+        <p class="text-sm text-gray-500">122 Properties</p>
+      </div>
+
+      <!-- Card 4 (Hidden on mobile) -->
+      <div class="hidden md:flex bg-white rounded-xl p-6 flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-red-100 p-3 rounded-xl mb-4">
+          <img src="https://img.icons8.com/?size=128&id=umYWLp28DCuA&format=png" alt="Mountain Bike Icon" class="w-8 h-8"/>
+        </div>
+        <h2 class="text-lg font-semibold mb-1 text-black">Mountain Bike</h2>
+        <p class="text-sm text-gray-500">185 Properties</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION: Tour Packages -->
+<section class="py-16 px-4 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900 mb-12">Our Upcoming<br>Tour Package</h2>
+
+  <!-- Tour Package Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Card 1 (Always show) -->
+    <div class="bg-white rounded-xl shadow-sm">
+      <div class="relative bg-gray-300 h-48 sm:h-60 md:h-72 rounded-xl">
+        <span class="absolute top-3 right-3 text-white font-semibold">$599</span>
+      </div>
+      <div class="p-4 flex justify-between items-center text-sm mt-2">
+        <div class="text-left">
+          <div class="flex items-center text-orange-500 mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+            <span class="text-black font-medium">Eiffel Tower</span>
+          </div>
+          <div class="text-gray-500">5d - 4n</div>
+        </div>
+        <div class="flex text-orange-500">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <!-- Card 2 (Hidden on mobile) -->
+    <div class="hidden md:block bg-white rounded-xl shadow-sm mt-8 md:-mt-6">
+      <div class="relative bg-gray-300 h-48 sm:h-60 md:h-72 rounded-xl">
+        <span class="absolute top-3 right-3 text-white font-semibold">$480</span>
+      </div>
+      <div class="p-4 flex justify-between items-center text-sm mt-2">
+        <div class="text-left">
+          <div class="flex items-center text-orange-500 mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+            <span class="text-black font-medium">Big Bear Lake</span>
+          </div>
+          <div class="text-gray-500">5d - 4n</div>
+        </div>
+        <div class="flex text-orange-500">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <!-- Card 3 (Hidden on mobile) -->
+    <div class="hidden md:block bg-white rounded-xl shadow-sm">
+      <div class="relative bg-gray-300 h-48 sm:h-60 md:h-72 rounded-xl">
+        <span class="absolute top-3 right-3 text-white font-semibold">$550</span>
+      </div>
+      <div class="p-4 flex justify-between items-center text-sm mt-2">
+        <div class="text-left">
+          <div class="flex items-center text-orange-500 mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+            <span class="text-black font-medium">Colorado Springs</span>
+          </div>
+          <div class="text-gray-500">5d - 4n</div>
+        </div>
+        <div class="flex text-orange-500">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="mt-12">
+    <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 mx-auto">
+      View All
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </button>
+  </div>
+</section>
+
+
+
+
+
+
 
     <!-- (เอิงเอย)-->
+     <!-- Section popular-->
+    <section class="popular-destinations bg-amber-50 py-16">
+
+        <!-- main div -->
+        <div class="destinations-container max-w-7xl mx-auto "> 
+
+            <!-- div นี้จะถูกแบ่งเป็น 2 คอลัมน์ -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+
+                <!-- คอลัมน์ที่ 1 (ซ้าย) -->
+                <div class="flex-1 relative">
+                    <!-- Carousel Container -->
+                    <div class="flex gap-6 items-end justify-start -ml-10">
+                        <!-- Card 1 - Partial view -->
+                        <div class="w-56 h-80 bg-gray-400 rounded-xl overflow-hidden relative z-10 ">
+                            
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="text-white font-semibold text-sm">
+                                        Wall of China <br> <span class="font-light">China</span>
+                                    </div>
+                                     
+                                    <div class="flex items-center gap-1 text-white text-sm mt-1">
+                                        <span>4.8</span>
+                                        <span>★</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Card 2 - Main/Center -->
+                        <div class="w-64 h-96 bg-gray-400 rounded-xl overflow-hidden relative z-20 -mt-4 mb-[30px]">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+
+                                <div class="flex items-center justify-between">
+                                    <div class="text-white font-semibold text-sm">
+                                        Lake Powell <br> <span class="font-light">U.S.A</span>
+                                    </div>
+                                     
+                                    <div class="flex items-center gap-1 text-white text-sm mt-1">
+                                        <span>4.8</span>
+                                        <span>★</span>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Card 3 - Full view -->
+                        <div class="w-56 h-80 bg-gray-400 rounded-xl overflow-hidden relative z-10 ">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+
+                                <div class="flex items-center justify-between">
+                                    <div class="text-white font-semibold text-sm">
+                                        Deep of Creek Lake <br> <span class="font-light">Maryland</span>
+                                    </div>
+                                     
+                                    <div class="flex items-center gap-1 text-white text-sm mt-1">
+                                        <span>4.8</span>
+                                        <span>★</span>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <div class="flex justify-center gap-20 mt-8">
+
+                        <!-- Left button -->
+                        <button class="w-10 h-10  rounded-full  flex items-center justify-center hover:shadow-lg transition-shadow">
+                            <span class="text-orange-500 text-3xl font-extralight">←</span>
+                        </button>
+                        
+                        <!-- Right button -->
+                        <button class="w-10 h-10  rounded-full  flex items-center justify-center hover:shadow-lg transition-shadow">
+                            <span class="text-orange-500 text-4xl font-semibold">→</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- คอลัมน์ที่ 2 (ขวา) -->
+                <div class="flex-1 max-w-xl pl-8">
+                    <article>
+                        <header>
+                            <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                                Most Popular<br>
+                                Destination of Us!
+                            </h2>
+
+                            <p class="text-gray-600 text-base font-light leading-relaxed mb-8">
+                                Credibly unleash economically sound e-business with<br>
+                                bleeding-edge users. Uniquely simplify mission-critical benefits with<br>
+                                cross-unit manufactured products. Energistically re-engineer
+                            </p>
+
+                            <a href="#" class="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-medium transition-colors duration-300">
+                                View All
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+
+                        </header>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="Feeback-Customer bg-white py-16">
+        <!-- main div -->
+        <div class="Feedback-container max-w-7xl mx-auto "> 
+            <!-- แบ่ง 2 colum -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+
+                <!-- คอลัมน์ที่ 1 (ซ้าย) -->
+                <div class="flex-1 relative flex justify-center items-center">
+                    <img src="./img/feeback_1.png" alt="Feedback 1" class="w-[450px] h-auto object-cover rounded-xl">
+                </div>
+
+                <div class="flex-1 max-w-xl pl-8 flex justify-center items-center">
+                    <article>
+                        <header>
+                            <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                                Feedback from<br>
+                                Our Customers
+                            </h2>
+
+                        
+                            <p class="text-gray-600 text-base font-light">
+                                “ I’ve  Went ot America from Tripp Play  about 1 
+                            </p>
+
+                            <p class="text-gray-600 text-base font-light">
+                                years ago. Tripp make the prototyping 
+                            </p>
+
+                            <p class="text-gray-600 text-base font-light">
+                                process so easy and faster. I feel this is the 
+                            </p>
+
+                            <p class="text-gray-600 text-base font-light mb-8">
+                                best apps for Prototyping use ”
+                            </p>
+                       
+
+                            <p class="text-gray-600 text-base font-extralight leading-relaxed mb-6">
+                                - Ferdous - CEO of Coco
+                            </p>
+
+                            <div class="flex gap-5 mt-8">
+
+                                <!-- Left button -->
+                                <button class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:shadow-lg transition-shadow">
+                                    <span class="text-white text-xl font-extralight">←</span>
+                                </button>
+                                
+                                <!-- Right button -->
+                                <button class="w-10 h-10 bg-orange-500 rounded-full  flex items-center justify-center hover:shadow-lg transition-shadow">
+                                    <span class="text-white text-xl font-extralight">→</span>
+                                </button>
+                            </div>
+
+                        </header>
+                    </article>
+
+                </div>
+
+            </div>
+
+         </div>
+
+
+    </section>
 
     <!-- (tanji)-->
+    <section class="popular-section-container w-full pt-[69px] pl-[250px] pr-[250px] flex flex-col items-center">
+        <div class="popular-section-content w-full gap-[220px] flex flex-col items-center">
+            <h1 class="text-[48px]/[68px] text-center font-bold font-['Poppins']">World Top Visitting<br />Place in 2021</h1>
+            <div class="popular-country-map w-full">
+                <img src="assets/popular-country-map.png" alt="popular-country-map">
+                <!-- <img src="assets/world-map.png" alt="world-map">
+                <div class="absolute left-[21%] top-[74%] text-center"><a href="#"><img src="assets/mexico-icon.png" alt="mexico"></a></div>
+                <div class="absolute left-[46%] top-[63%] text-center"><a href="#"><img src="assets/france-icon.png" alt="france"></a></div>
+                <div class="absolute left-[70%] top-[95%] text-center"><a href="#"><img src="assets/australia-icon.png" alt="australia"></a></div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section-container w-full pt-[220px] pb-[100px] pl-[250px] pr-[250px] gap-[100px] flex flex-col bg-[url('assets/footer-bg.png')] bg-cover bg-center">
+        <div class="subscribe-section gap-[50px] flex flex-col">
+            <h1 class="text-[48px]/[68px] font-bold font-['Poppins']">Subscribe<br />for every Tour<br />News & Tips</h1>
+            <form action="" class="w-[574px] h-[100px] p-[15px] flex flex-row justify-between gap-[10px] bg-white rounded-[20px] shadow-lg">
+                <input class="w-full p-2 rounded-[20px] text-[16px]/[24px] font-medium font-['DM_Sans']" type="email" placeholder="Enter your email">
+                <button class="w-[177px] p-2 rounded-[20px] text-[16px]/[24px] font-bold font-['DM_Sans'] text-white bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49]" type="submit">Subscribe →</button>
+            </form>
+        </div>
+        <div class="footer-section-content w-[50%] flex flex-col gap-2 mt-[-46px]">
+            <div class="footer-section-content-top">
+                <img src="assets/footer-icon.png" alt="footer-icon">
+            </div>
+            <div class="footer-section-content-bottom flex flex-row items-center justify-between">
+                <div class="footer-section-content-bottom-left">
+                    <h1 class="text-[18px] font-medium font-['DM_Sans']">Copyright©Tripp.All right reserved</h1>
+                </div>
+                <div class="footer-section-content-bottom-right">
+                    <ul class="flex flex-row gap-4">
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/google-icon.png" alt="Google">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/twitter-icon.png" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/instagram-icon.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="assets/linkedin-icon.png" alt="LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
