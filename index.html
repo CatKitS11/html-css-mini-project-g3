@@ -1,18 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    <title>Travel Company</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Baloo Bhai 2', sans-serif;
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Paytone One', sans-serif;
+        font-family: 'Poppins', sans-serif; -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- nev,section hero(P'tae) -->
+    <div
+      class="bg-cover bg-center"
+      style="background-image: url('./assets/images/bg-cover.jpg')"
+    >
+      <div class="bg-white/85">
+        <nav class="flex mt-6 mb-6 justify-around items-center bg-white/50">
+          <div
+            class="font-bold text-4xl"
+            style="font-family: 'Baloo Bhai 2', sans-serif"
+          >
+            Tripp<span class="text-orange-500">.</span>
+          </div>
+          <ul
+            class="flex font-semibold gap-10"
+            style="font-family: 'DM Sans', sans-serif"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tour Package</a></li>
+          </ul>
+          <button
+            class="bg-orange-500 text-white font-semibold rounded-lg px-8 py-3 flex items-center gap-2 hover:bg-orange-600 transition"
+          >
+            Contact Us
+          </button>
+        </nav>
+        <header
+          class="relative min-h-[600px] flex flex-col justify-center items-center"
+        >
+          <div
+            class="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between w-full px-4 pt-16 pb-8"
+          >
+            <!-- Left: Text -->
+            <div class="flex-1 z-1">
+              <h1
+                class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
+                style="font-family: 'Paytone One', sans-serif"
+              >
+                Fuel Mind<br />
+                by Travel
+              </h1>
+              <p
+                class="text-lg md:text-xl text-blue-900/70 mb-8 max-w-lg"
+                style="font-family: 'DM Sans', sans-serif"
+              >
+                Enthusiastically extend extensive customer service<br />
+                before best breed convergence completely.
+              </p>
+            </div>
+            <!-- Right: Orange Circle + Card -->
+            <div
+              class="relative flex-1 flex justify-center items-center mt-10 md:mt-0"
+            >
+              <!-- Orange Circle -->
+              <div
+                class="w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-br from-orange-400 to-orange-500 flex items-center justify-center relative overflow-hidden"
+              >
+                <!-- Wavy lines (SVG) -->
+                <!-- <svg
+              class="absolute inset-0 w-full h-full"
+              viewBox="0 0 420 420"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 60 Q105 80 210 60 Q315 40 420 60"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 120 Q105 140 210 120 Q315 100 420 120"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 180 Q105 200 210 180 Q315 160 420 180"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 240 Q105 260 210 240 Q315 220 420 240"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+              <path
+                d="M0 300 Q105 320 210 300 Q315 280 420 300"
+                stroke="#FF8C5A"
+                stroke-width="16"
+                fill="none"
+              />
+            </svg> -->
+              </div>
+              <!-- Card on top of circle -->
+              <div
+                class="absolute top-1/2 left-1/10 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl shadow-lg w-40 h-28 flex flex-col items-center justify-center"
+              >
+                <div class="w-20 h-10 bg-gray-200 rounded mb-2"></div>
+                <span
+                  class="text-xs text-gray-700"
+                  style="font-family: 'DM Sans', sans-serif"
+                  >Mountain Scot</span
+                >
+                <div class="flex gap-2 mt-2">
+                  <span class="w-4 h-4 bg-gray-300 rounded-full"></span>
+                  <span class="w-4 h-4 bg-gray-300 rounded-full"></span>
+                  <span class="w-4 h-4 bg-gray-300 rounded-full"></span>
+                  <span class="w-4 h-4 bg-gray-400 rounded-full"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Search/Filter Bar -->
+          <div
+            class="absolute left-5/8 bottom-0 -translate-x-1/2 translate-y-1/2 w-[95%] md:w-[900px] bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between px-6 py-4 gap-4"
+          >
+            <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+              <div>
+                <label class="text-xs text-gray-400">Location</label>
+                <div class="font-semibold">Cox's Bazar</div>
+              </div>
+              <div>
+                <label class="text-xs text-gray-400">Date</label>
+                <div class="font-semibold">Mon, 14 Mar – Thu, 17 Mar</div>
+              </div>
+              <div>
+                <label class="text-xs text-gray-400">Avg. Price</label>
+                <div class="font-semibold">$300 - $600</div>
+              </div>
+            </div>
+            <button
+              class="bg-orange-500 text-white font-semibold rounded-lg px-8 py-3 flex items-center gap-2 hover:bg-orange-600 transition"
+            >
+              Explore
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+      </div>
+    </div>
 
     <!-- (bambam)-->
 
