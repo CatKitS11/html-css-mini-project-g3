@@ -487,54 +487,74 @@
     </section>
 
     <!-- (tanji)-->
-    <section class="popular-section-container w-full pt-[69px] pl-[250px] pr-[250px] flex flex-col items-center">
-        <div class="popular-section-content w-full gap-[220px] flex flex-col items-center">
-            <h1 class="text-[48px]/[68px] text-center font-bold font-['Poppins']">World Top Visitting<br />Place in 2021</h1>
-            <div class="popular-country-map w-full">
-                <img src="assets/popular-country-map.png" alt="popular-country-map">
-                <!-- <img src="assets/world-map.png" alt="world-map">
-                <div class="absolute left-[21%] top-[74%] text-center"><a href="#"><img src="assets/mexico-icon.png" alt="mexico"></a></div>
-                <div class="absolute left-[46%] top-[63%] text-center"><a href="#"><img src="assets/france-icon.png" alt="france"></a></div>
-                <div class="absolute left-[70%] top-[95%] text-center"><a href="#"><img src="assets/australia-icon.png" alt="australia"></a></div> -->
+    <section class="popular-section-container w-full pt-[69px] pl-[13vw] pr-[13vw] flex flex-col items-center max-sm:pl-[3vw] max-sm:pr-[3vw]">
+        <div class="popular-section-content w-full gap-[100px] flex flex-col items-center max-sm:gap-[20px]">
+            <h1 class="text-[48px]/[68px] text-center font-bold font-['Poppins'] max-sm:text-[24px]/[34px]">World Top Visitting<br />Place in 2021</h1>
+            <div class="popular-country-map w-full relative">
+                <!-- <img src="assets/popular-country-map.png" alt="popular-country-map"> -->
+                <img src="assets/world-map.png" alt="world-map">
+                <div class="absolute left-[10%] top-[34%] w-[15%] max-sm:w-[25%] h-auto text-center flex flex-col items-center">
+                    <a href="#">
+                        <img class="mb-[-30%]" src="assets/mexico-icon.png" alt="mexico">
+                        <span class="flex flex-col font-['Poppins'] font-semibold text-[100%]/[130%] max-sm:hidden">Mexico</span>
+                        <span class="flex flex-col font-['DM_Sans'] text-[#5A7184] font-semibold text-[75%]/[115%] max-sm:hidden">03 Tour</span>
+                    </a>
+                </div>
+                <div class="absolute left-[45%] top-[25%] w-[15%] max-sm:w-[25%] h-auto text-center flex flex-col items-center">
+                    <a href="#">
+                        <img class="mb-[-30%]" src="assets/france-icon.png" alt="france">
+                        <span class="flex flex-col font-['Poppins'] font-semibold text-[100%]/[130%] max-sm:hidden">France</span>
+                        <span class="flex flex-col font-['DM_Sans'] text-[#5A7184] font-semibold text-[75%]/[115%] max-sm:hidden">07 Tour</span>
+                    </a>
+                </div>
+                <div class="absolute left-[78%] top-[60%] w-[15%] max-sm:w-[25%] h-auto text-center flex flex-col items-center">
+                    <a href="#">
+                        <img class="mb-[-30%]" src="assets/australia-icon.png" alt="australia">
+                        <span class="flex flex-col font-['Poppins'] font-semibold text-[100%]/[130%] max-sm:hidden">Australia</span>
+                        <span class="flex flex-col font-['DM_Sans'] text-[#5A7184] font-semibold text-[75%]/[115%] max-sm:hidden">02 Tour</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer-section-container w-full pt-[220px] pb-[100px] pl-[250px] pr-[250px] gap-[100px] flex flex-col bg-[url('assets/footer-bg.png')] bg-cover bg-center">
-        <div class="subscribe-section gap-[50px] flex flex-col">
-            <h1 class="text-[48px]/[68px] font-bold font-['Poppins']">Subscribe<br />for every Tour<br />News & Tips</h1>
-            <form action="" class="w-[574px] h-[100px] p-[15px] flex flex-row justify-between gap-[10px] bg-white rounded-[20px] shadow-lg">
+    <footer class="footer-section-container w-full pt-[220px] pb-[100px] pl-[13vw] pr-[13vw] gap-[100px] flex flex-col bg-[url('assets/footer-bg.png')] bg-cover bg-center max-sm:bg-green-300 max-sm:pl-[3vw] max-sm:pr-[3vw] max-sm:pt-[80px] max-sm:pb-[10px]">
+        <div class="subscribe-section gap-[50px] flex flex-col max-sm:gap-[20px]">
+            <h1 class="text-[48px]/[68px] font-bold font-['Poppins'] max-sm:text-[30px]/[40px]">Subscribe<br />for every Tour<br />News & Tips</h1>
+            <form action="" class="w-[574px] h-[100px] p-[15px] flex flex-row justify-between gap-[10px] bg-white rounded-[20px] shadow-lg max-sm:w-full">
                 <input class="w-full p-2 rounded-[20px] text-[16px]/[24px] font-medium font-['DM_Sans']" type="email" placeholder="Enter your email">
-                <button class="w-[177px] p-2 rounded-[20px] text-[16px]/[24px] font-bold font-['DM_Sans'] text-white bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49]" type="submit">Subscribe →</button>
+                <button class="w-[177px] p-2 rounded-[20px] text-[16px]/[24px] font-bold font-['DM_Sans'] text-white bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] max-sm:w-full max-sm:max-w-[177px]" type="submit">Subscribe →</button>
             </form>
         </div>
         <div class="footer-section-content w-[50%] flex flex-col gap-2 mt-[-46px]">
             <div class="footer-section-content-top">
-                <img src="assets/footer-icon.png" alt="footer-icon">
+                <h1 class="font-bold text-4xl font-['Baloo_Bhai_2']">
+                    Tripp<span class="text-orange-500">.</span>
+                </h1>
             </div>
-            <div class="footer-section-content-bottom flex flex-row items-center justify-between">
+            <div class="footer-section-content-bottom flex flex-row items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-[20px]">
                 <div class="footer-section-content-bottom-left">
                     <h1 class="text-[18px] font-medium font-['DM_Sans']">Copyright©Tripp.All right reserved</h1>
                 </div>
                 <div class="footer-section-content-bottom-right">
                     <ul class="flex flex-row gap-4">
                         <li>
-                            <a href="#" class="block">
+                            <a href="#" class="flex w-[40px] h-[40px]">
                                 <img src="assets/google-icon.png" alt="Google">
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block">
+                            <a href="#" class="flex w-[40px] h-[40px]">
                                 <img src="assets/twitter-icon.png" alt="Twitter">
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block">
+                            <a href="#" class="flex w-[40px] h-[40px]">
                                 <img src="assets/instagram-icon.png" alt="Instagram">
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block">
+                            <a href="#" class="flex w-[40px] h-[40px]">
                                 <img src="assets/linkedin-icon.png" alt="LinkedIn">
                             </a>
                         </li>
